@@ -1,4 +1,4 @@
-abstract class Vehicle {
+public abstract class Vehicle {
     int height;
     long timeEntered;
 

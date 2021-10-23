@@ -1,12 +1,10 @@
 import java.util.HashMap;
 
-abstract public class ParkingSpace {
+public abstract class ParkingSpace {
     HashMap parkingLot = new HashMap();
     int pricePerHour;
 
-    public boolean canPark(Vehicle vehicle) {
-        return true;
-    }
+    abstract boolean canPark(Vehicle vehicle);
 
     ParkingSpace(int pricePerHour) {
         this.pricePerHour = pricePerHour;
