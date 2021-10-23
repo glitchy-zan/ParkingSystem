@@ -1,10 +1,12 @@
-public class Vehicle {
+public abstract class Vehicle {
     int height;
     long timeEntered;
 
     Vehicle(int height) {
         this.height = height;
     }
+
+    abstract void drive();
 
     public int getHeight() {
         return height;
