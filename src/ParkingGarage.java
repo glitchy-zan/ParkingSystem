@@ -5,7 +5,7 @@ public class ParkingGarage extends ParkingSpace {
     }
 
     public boolean canPark(Vehicle vehicle) {
-        return (vehicle.height > 200) ? false : true;
+        return (vehicle.height < 200);
 
     }
 
