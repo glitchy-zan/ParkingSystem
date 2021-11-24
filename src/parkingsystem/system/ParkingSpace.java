@@ -1,3 +1,5 @@
+package parkingsystem.system;
+
 import java.util.HashMap;
 
 public abstract class ParkingSpace {
