@@ -1,6 +1,10 @@
+package parkingsystem.system;
+
+import parkingsystem.system.ParkingSpace;
+
 public class ParkingGarage extends ParkingSpace {
 
-    ParkingGarage(int pricePerHour) {
+    public ParkingGarage(int pricePerHour) {
         super(pricePerHour);
     }
 
@@ -13,6 +17,6 @@ public class ParkingGarage extends ParkingSpace {
         if (canPark(vehicle)) {
             parkingLot.put(vehicle.hashCode(), vehicle);
             vehicle.timeEntered = System.currentTimeMillis();
-        } else System.out.println("Vehicle is too high for garage.");
+        } else System.out.println("parkingsystem.system.Vehicle is too high for garage.");
     }
 }

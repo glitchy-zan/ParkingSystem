@@ -1,3 +1,5 @@
+package parkingsystem.system;
+
 public abstract class Vehicle {
     int height;
     long timeEntered;

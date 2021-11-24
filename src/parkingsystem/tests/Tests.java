@@ -1,4 +1,7 @@
+package parkingsystem.tests;
+
 import org.junit.jupiter.api.*;
+import parkingsystem.system.*;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -6,6 +9,7 @@ import java.io.PrintStream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Tests {
+
 
     Car car;
     Van van;
@@ -24,8 +28,8 @@ public class Tests {
     @RepeatedTest(2)
     @DisplayName("Park method")
     void testPark() {
-        assertEquals(true, garage.canPark(car));
-        assertEquals(false, garage.canPark(van));
+        Assertions.assertEquals(true, garage.canPark(car));
+        Assertions.assertEquals(false, garage.canPark(van));
     }
 
     @Test

@@ -1,6 +1,8 @@
+package parkingsystem.system;
+
 public class Van extends Vehicle {
 
-    Van(int height) {
+    public Van(int height) {
         super(height);
     }
 
